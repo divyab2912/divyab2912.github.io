@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Divya Bandaru</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Dancing+Script:wght@400;500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Persistent Navigation -->
+  <nav id="main-nav">
+    <div class="nav-inner">
+      <button class="nav-pill active" data-target="home">HOME</button>
+      <button class="nav-pill" data-target="work">WORK</button>
+      <button class="nav-pill" data-target="about">ABOUT</button>
+      <button class="nav-pill" data-target="contact">CONTACT</button>
+    </div>
+  </nav>
+
+  <!-- Viewport wrapper -->
+  <div id="viewport">
+
+    <!-- ═══════════════════════════════════════
+         HOME
+    ═══════════════════════════════════════ -->
+    <section id="panel-home" class="panel panel-home active">
+      <div class="hero-bg">
+        <video id="hero-video" autoplay muted loop playsinline>
+          <source src="" type="video/mp4" />
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="grain"></div>
+      </div>
+
+      <div class="hero-content">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Divya</h1>
+        <p class="hero-statement">
+          A Computer Science<br>& Mathematics major.
+        </p>
+        <p class="hero-body">
+          Combining microscopy with theory<br>
+          to understand how cells grow and divide —<br>
+          and how we might eventually control that process.
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         WORK
+    ═══════════════════════════════════════ -->
+    <section id="panel-work" class="panel panel-work" aria-hidden="true">
+      <div class="panel-scroll">
+        <div class="work-inner">
+
+          <!-- ── Publications ── -->
+          <div class="chapter">
+            <div class="chapter-header">
+              <span class="chapter-num">01</span>
+              <span class="chapter-title">Publications</span>
+            </div>
+
+            <div class="pub-block">
+              <p class="pub-main-title">
+                A Novel Three-Stage AI-Assisted Approach for Accurate Differential Diagnosis and Classification of NIFTP and Thyroid Neoplasms
+              </p>
+              <div class="pub-meta-row">
+                <span class="pub-journal">Endocrine Pathology</span>
+                <span class="pub-dot">·</span>
+                <span class="pub-year">2025</span>
+                <span class="pub-dot">·</span>
+                <a href="https://link.springer.com/article/10.1007/s12022-025-09865-0" target="_blank" rel="noopener" class="pub-link">Springer ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="work-divider"></div>
+
+          <!-- ── Research Experience ── -->
+          <div class="chapter">
+            <div class="chapter-header">
+              <span class="chapter-num">02</span>
+              <span class="chapter-title">Research Experience</span>
+            </div>
+
+            <div class="research-layout">
+
+              <!-- Featured card (wide) -->
+              <article class="research-card research-card--wide">
+                <div class="rc-accent-bar"></div>
+                <div class="rc-body">
+                  <div class="rc-top">
+                    <div>
+                      <h3 class="rc-name">NCBS Bangalore</h3>
+                      <p class="rc-institution">National Centre for Biological Sciences</p>
+                    </div>
+                    <span class="rc-year">2023 – 2024</span>
+                  </div>
+                  <p class="rc-desc">
+                    Studied cell division mechanisms using live-cell microscopy and quantitative image analysis. Developed computational pipelines to track cell-cycle progression across thousands of individual cells.
+                  </p>
+                  <div class="rc-tags">
+                    <span>Microscopy</span>
+                    <span>Cell Biology</span>
+                    <span>Python</span>
+                    <span>Image Analysis</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Two narrow cards -->
+              <div class="research-pair">
+                <article class="research-card">
+                  <div class="rc-accent-bar"></div>
+                  <div class="rc-body">
+                    <div class="rc-top">
+                      <div>
+                        <h3 class="rc-name">University of Tokyo</h3>
+                        <p class="rc-institution">Amgen Scholars Program</p>
+                      </div>
+                      <span class="rc-year">2023</span>
+                    </div>
+                    <p class="rc-desc">
+                      Investigated organelle dynamics under stress using fluorescence imaging. Contributed to research on autophagy pathways.
+                    </p>
+                    <div class="rc-tags">
+                      <span>Fluorescence</span>
+                      <span>Autophagy</span>
+                      <span>R</span>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="research-card">
+                  <div class="rc-accent-bar"></div>
+                  <div class="rc-body">
+                    <div class="rc-top">
+                      <div>
+                        <h3 class="rc-name">ICGEB Delhi</h3>
+                        <p class="rc-institution">Int'l Centre for Genetic Engineering & Biotechnology</p>
+                      </div>
+                      <span class="rc-year">2022</span>
+                    </div>
+                    <p class="rc-desc">
+                      Analysed genomic data for structural variation studies. Built bioinformatics pipelines for large-scale sequencing datasets.
+                    </p>
+                    <div class="rc-tags">
+                      <span>Genomics</span>
+                      <span>Bioinformatics</span>
+                      <span>Bash</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="work-divider"></div>
+
+          <!-- ── Projects ── -->
+          <div class="chapter">
+            <div class="chapter-header">
+              <span class="chapter-num">03</span>
+              <span class="chapter-title">Projects</span>
+            </div>
+
+            <div class="projects-layout">
+
+              <article class="project-card">
+                <div class="project-number">001</div>
+                <h3 class="project-title">Alzheimer's SNP Analysis</h3>
+                <p class="project-desc">
+                  Genome-wide association study pipeline to identify single nucleotide polymorphisms linked to late-onset Alzheimer's disease using population-scale genetic data.
+                </p>
+                <div class="project-tags">
+                  <span>GWAS</span><span>Python</span><span>Statistical Genetics</span>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-number">002</div>
+                <h3 class="project-title">Aurora Kinase Pan-Cancer</h3>
+                <p class="project-desc">
+                  Analysed Aurora kinase expression and mutation patterns across TCGA cancer types. Explored correlations with chromosomal instability and patient outcomes.
+                </p>
+                <div class="project-tags">
+                  <span>TCGA</span><span>R</span><span>Cancer Genomics</span>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-number">003</div>
+                <h3 class="project-title">PCOS Detection</h3>
+                <p class="project-desc">
+                  Machine learning model for polycystic ovary syndrome detection from ultrasound and clinical markers. Compared multiple classification approaches for clinical utility.
+                </p>
+                <div class="project-tags">
+                  <span>ML</span><span>Healthcare AI</span><span>Scikit-learn</span>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+        </div><!-- /work-inner -->
+      </div><!-- /panel-scroll -->
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         ABOUT
+    ═══════════════════════════════════════ -->
+    <section id="panel-about" class="panel panel-about" aria-hidden="true">
+      <div class="panel-scroll">
+        <div class="about-inner">
+
+          <!-- ── Intro ── -->
+          <div class="about-intro">
+            <p class="collage-p">I'm currently in my final year studying Computer Science &amp; Mathematics, with a minor in Biology.</p>
+            <p class="collage-p">Somewhere along the way, I got really interested in research.</p>
+            <p class="collage-p">Right now, I'm combining microscopy with theory to understand how cells grow and divide — and how we might eventually control that process.</p>
+            <p class="collage-p">Outside of academics, I spend a lot of time reading and writing. I love going down random intellectual rabbit holes — opening way too many tabs and trying to connect ideas across completely different fields.</p>
+          </div>
+
+          <!-- ── Research + Lab image ── -->
+          <div class="collage-row collage-row--research">
+            <div class="collage-text">
+              <p class="collage-p">
+                Right now, I'm combining microscopy with theory to understand how cells grow and divide — and how we might eventually control that process.
+              </p>
+              <p class="collage-p collage-p--small">
+                Outside of academics, I spend a lot of time reading and writing. I love going down random intellectual rabbit holes — opening way too many tabs and trying to connect ideas across completely different fields.
+              </p>
+            </div>
+            <div class="collage-photo-wrap collage-photo-wrap--tilt-right">
+              <!-- SVG arrow pointing at photo -->
+              <svg class="doodle-arrow doodle-arrow--left" viewBox="0 0 90 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 45 C20 20, 55 10, 82 18" stroke="#6B2D3E" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+                <path d="M77 14 L83 19 L75 23" stroke="#6B2D3E" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              </svg>
+              <div class="collage-photo">
+                <img src="lab.jpeg" alt="Lab" class="photo-img" />
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Hiking + Fuji image ── -->
+          <div class="collage-row collage-row--reverse collage-row--hiking">
+            <div class="collage-photo-wrap collage-photo-wrap--tilt-left">
+              <div class="collage-photo">
+                <img src="hike.jpeg" alt="Mount Fuji" class="photo-img" />
+              </div>
+              <svg class="doodle-arrow doodle-arrow--right" viewBox="0 0 90 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M82 45 C70 20, 35 10, 8 18" stroke="#6B2D3E" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+                <path d="M13 14 L7 19 L15 23" stroke="#6B2D3E" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              </svg>
+              <p class="photo-caption">slightly tired, very happy ↑</p>
+            </div>
+            <div class="collage-text">
+              <p class="collage-p">
+                I love hiking and being outdoors.
+              </p>
+              <p class="collage-note">
+                — that's me at the top of<br>Mount Fuji
+              </p>
+            </div>
+          </div>
+
+          <!-- ── Theatre + image ── -->
+          <div class="collage-row collage-row--theatre">
+            <div class="collage-text">
+              <p class="collage-p">
+                I joined Akshara Theatre because I wanted to do something completely different from my academic life, and it's been one of the most refreshing experiences so far. At the end of the day, I think I'm just someone who enjoys learning, thinking, and doing random things.
+              </p>
+            </div>
+            <div class="collage-photo-wrap collage-photo-wrap--tilt-right">
+              <svg class="doodle-arrow doodle-arrow--left" viewBox="0 0 90 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 45 C20 20, 55 10, 82 18" stroke="#99ABA6" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+                <path d="M77 14 L83 19 L75 23" stroke="#99ABA6" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              </svg>
+              <div class="collage-photo">
+                <img src="theatre.jpeg" alt="Akshara Theatre" class="photo-img" />
+              </div>
+              <p class="photo-caption photo-caption--sage">
+                Play — Agatha Christie's<br><em>"The Patient"</em><br>from Rule of Thumb
+              </p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         CONTACT
+    ═══════════════════════════════════════ -->
+    <section id="panel-contact" class="panel panel-contact" aria-hidden="true">
+      <div class="contact-inner">
+        <p class="contact-eyebrow">Let's connect.</p>
+        <div class="contact-links">
+          <a href="mailto:divyab2912@gmail.com" class="contact-item">
+            <span class="contact-label">Email</span>
+            <span class="contact-arrow">↗</span>
+          </a>
+          <a href="https://www.linkedin.com/in/divya-bandaru/" target="_blank" rel="noopener" class="contact-item">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-arrow">↗</span>
+          </a>
+          <a href="cv.pdf" target="_blank" class="contact-item">
+            <span class="contact-label">CV</span>
+            <span class="contact-arrow">↓</span>
+          </a>
+          <a href="https://github.com/divyab2912" target="_blank" rel="noopener" class="contact-item">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-arrow">↗</span>
+          </a>
+          <a href="https://scholar.google.com/citations?user=OGeOMn8AAAAJ&hl=en" target="_blank" rel="noopener" class="contact-item">
+            <span class="contact-label">Google Scholar</span>
+            <span class="contact-arrow">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /viewport -->
+
+  <script src="main.js"></script>
+</body>
+</html>
