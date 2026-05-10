@@ -96,10 +96,7 @@
     }
   }, { passive: true });
 
-  // Video: hide element if no src so the CSS ::before fallback (microscopy image) shows
-  const video = document.getElementById('hero-video');
-  const src = video?.querySelector('source')?.getAttribute('src') ?? '';
-  if (!src) video.style.display = 'none';
+  document.getElementById('hero-video')?.play().catch(() => {});
 
   // Initial setup
   updateNav('home');

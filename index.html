@@ -6,7 +6,7 @@
   <title>Divya Bandaru</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Dancing+Script:wght@400;500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Dancing+Script:wght@400;500&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -30,23 +30,16 @@
     <section id="panel-home" class="panel panel-home active">
       <div class="hero-bg">
         <video id="hero-video" autoplay muted loop playsinline>
-          <source src="" type="video/mp4" />
+          <source src="test2.mp4" type="video/mp4" />
         </video>
         <div class="hero-overlay"></div>
         <div class="grain"></div>
       </div>
 
       <div class="hero-content">
-        <p class="hero-greeting">Hello, I'm</p>
-        <h1 class="hero-name">Divya</h1>
-        <p class="hero-statement">
-          A Computer Science<br>& Mathematics major.
-        </p>
-        <p class="hero-body">
-          Combining microscopy with theory<br>
-          to understand how cells grow and divide —<br>
-          and how we might eventually control that process.
-        </p>
+        <p class="hero-block">Hello, I'm <span class="hero-name">Divya!</span></p>
+        <p class="hero-block hero-block--major">A Computer Science &amp; Mathematics major</p>
+        <p class="hero-block hero-block--body">Combining microscopy with theory to understand how cells grow and divide and how we might eventually control that process.</p>
       </div>
     </section>
 
@@ -87,75 +80,58 @@
               <span class="chapter-title">Research Experience</span>
             </div>
 
-            <div class="research-layout">
+            <div class="box-grid box-grid--3">
 
-              <!-- Featured card (wide) -->
-              <article class="research-card research-card--wide">
-                <div class="rc-accent-bar"></div>
-                <div class="rc-body">
-                  <div class="rc-top">
-                    <div>
-                      <h3 class="rc-name">NCBS Bangalore</h3>
-                      <p class="rc-institution">National Centre for Biological Sciences</p>
-                    </div>
-                    <span class="rc-year">2023 – 2024</span>
+              <article class="box-card">
+                <div class="box-card__head">
+                  <div>
+                    <h3 class="box-card__name">NCBS Bangalore</h3>
+                    <p class="box-card__sub">National Centre for Biological Sciences</p>
                   </div>
-                  <p class="rc-desc">
-                    Studied cell division mechanisms using live-cell microscopy and quantitative image analysis. Developed computational pipelines to track cell-cycle progression across thousands of individual cells.
-                  </p>
-                  <div class="rc-tags">
-                    <span>Microscopy</span>
-                    <span>Cell Biology</span>
-                    <span>Python</span>
-                    <span>Image Analysis</span>
-                  </div>
+                  <span class="box-card__badge">2023–2024</span>
                 </div>
+                <div class="box-card__divider"></div>
+                <p class="box-card__tagline">Semi-supervised computational biology pipeline for decoding cell-cycle progression from microscopy data.</p>
+                <ul class="box-card__bullets">
+                  <li>Developed VAE-based representation learning for cell-cycle phase classification from live-cell imaging.</li>
+                  <li>Extended framework toward multimodal tissue-scale Xenium spatial transcriptomics integration.</li>
+                  <li>Combined microscopy, quantitative image analysis, and computational theory.</li>
+                </ul>
               </article>
 
-              <!-- Two narrow cards -->
-              <div class="research-pair">
-                <article class="research-card">
-                  <div class="rc-accent-bar"></div>
-                  <div class="rc-body">
-                    <div class="rc-top">
-                      <div>
-                        <h3 class="rc-name">University of Tokyo</h3>
-                        <p class="rc-institution">Amgen Scholars Program</p>
-                      </div>
-                      <span class="rc-year">2023</span>
-                    </div>
-                    <p class="rc-desc">
-                      Investigated organelle dynamics under stress using fluorescence imaging. Contributed to research on autophagy pathways.
-                    </p>
-                    <div class="rc-tags">
-                      <span>Fluorescence</span>
-                      <span>Autophagy</span>
-                      <span>R</span>
-                    </div>
+              <article class="box-card">
+                <div class="box-card__head">
+                  <div>
+                    <h3 class="box-card__name">University of Tokyo</h3>
+                    <p class="box-card__sub">Amgen Scholars Program</p>
                   </div>
-                </article>
+                  <span class="box-card__badge">2023</span>
+                </div>
+                <div class="box-card__divider"></div>
+                <p class="box-card__tagline">Live-cell imaging and kinetic modelling research on dsRNA uptake, trafficking, and intracellular pathways.</p>
+                <ul class="box-card__bullets">
+                  <li>Quantified SID1-mediated uptake dynamics and endosomal escape mechanisms.</li>
+                  <li>Distinguished clathrin-mediated vs SID1-only pathways using dose-dependent kinetic modelling.</li>
+                  <li>Conducted confocal microscopy colocalization analysis of SLC proteins and lysosomes.</li>
+                </ul>
+              </article>
 
-                <article class="research-card">
-                  <div class="rc-accent-bar"></div>
-                  <div class="rc-body">
-                    <div class="rc-top">
-                      <div>
-                        <h3 class="rc-name">ICGEB Delhi</h3>
-                        <p class="rc-institution">Int'l Centre for Genetic Engineering & Biotechnology</p>
-                      </div>
-                      <span class="rc-year">2022</span>
-                    </div>
-                    <p class="rc-desc">
-                      Analysed genomic data for structural variation studies. Built bioinformatics pipelines for large-scale sequencing datasets.
-                    </p>
-                    <div class="rc-tags">
-                      <span>Genomics</span>
-                      <span>Bioinformatics</span>
-                      <span>Bash</span>
-                    </div>
+              <article class="box-card">
+                <div class="box-card__head">
+                  <div>
+                    <h3 class="box-card__name">ICGEB Delhi</h3>
+                    <p class="box-card__sub">Int'l Centre for Genetic Engineering &amp; Biotechnology</p>
                   </div>
-                </article>
-              </div>
+                  <span class="box-card__badge">2022</span>
+                </div>
+                <div class="box-card__divider"></div>
+                <p class="box-card__tagline">AI-assisted histopathological diagnostic system for differential classification of thyroid neoplasms.</p>
+                <ul class="box-card__bullets">
+                  <li>Built U-Net + EfficientNet pipeline for NIFTP classification from histopathology images.</li>
+                  <li>Achieved 87.6% diagnostic accuracy across thyroid neoplasm categories.</li>
+                  <li>Integrated deep learning with translational biomedical diagnostics.</li>
+                </ul>
+              </article>
 
             </div>
           </div>
@@ -169,39 +145,54 @@
               <span class="chapter-title">Projects</span>
             </div>
 
-            <div class="projects-layout">
+            <div class="box-grid box-grid--3">
 
-              <article class="project-card">
-                <div class="project-number">001</div>
-                <h3 class="project-title">Alzheimer's SNP Analysis</h3>
-                <p class="project-desc">
-                  Genome-wide association study pipeline to identify single nucleotide polymorphisms linked to late-onset Alzheimer's disease using population-scale genetic data.
-                </p>
-                <div class="project-tags">
-                  <span>GWAS</span><span>Python</span><span>Statistical Genetics</span>
+              <article class="box-card">
+                <div class="box-card__head">
+                  <div>
+                    <h3 class="box-card__name">Aurora Kinase Pan-Cancer Analysis</h3>
+                  </div>
+                  <span class="box-card__badge box-card__badge--num">001</span>
                 </div>
+                <div class="box-card__divider"></div>
+                <p class="box-card__tagline">Cross-cancer systems biology framework integrating transcriptomics, epigenomics, survival, and immune signatures.</p>
+                <ul class="box-card__bullets">
+                  <li>Integrated TCGA + GTEx RNA-seq, DNA methylation, survival, and ssGSEA immune infiltration data.</li>
+                  <li>Applied Cox regression, Kaplan–Meier, ROC/Time-ROC, and nomogram modelling.</li>
+                  <li>Built a 33-cancer multi-omics analytical framework.</li>
+                </ul>
               </article>
 
-              <article class="project-card">
-                <div class="project-number">002</div>
-                <h3 class="project-title">Aurora Kinase Pan-Cancer</h3>
-                <p class="project-desc">
-                  Analysed Aurora kinase expression and mutation patterns across TCGA cancer types. Explored correlations with chromosomal instability and patient outcomes.
-                </p>
-                <div class="project-tags">
-                  <span>TCGA</span><span>R</span><span>Cancer Genomics</span>
+              <article class="box-card">
+                <div class="box-card__head">
+                  <div>
+                    <h3 class="box-card__name">Alzheimer's SNP Classification</h3>
+                  </div>
+                  <span class="box-card__badge box-card__badge--num">002</span>
                 </div>
+                <div class="box-card__divider"></div>
+                <p class="box-card__tagline">Large-scale statistical genomics analysis for identifying Alzheimer's-associated genetic variants.</p>
+                <ul class="box-card__bullets">
+                  <li>Analyzed ADNI-3 cohort (654 participants) for SNP associations using chi-square + logistic regression.</li>
+                  <li>Performed PCA ancestry analysis, FUMA functional annotation, and MAGMA pathway analysis.</li>
+                  <li>Combined statistical genetics with computational disease interpretation.</li>
+                </ul>
               </article>
 
-              <article class="project-card">
-                <div class="project-number">003</div>
-                <h3 class="project-title">PCOS Detection</h3>
-                <p class="project-desc">
-                  Machine learning model for polycystic ovary syndrome detection from ultrasound and clinical markers. Compared multiple classification approaches for clinical utility.
-                </p>
-                <div class="project-tags">
-                  <span>ML</span><span>Healthcare AI</span><span>Scikit-learn</span>
+              <article class="box-card">
+                <div class="box-card__head">
+                  <div>
+                    <h3 class="box-card__name">PCOS Diagnostic Pipeline</h3>
+                  </div>
+                  <span class="box-card__badge box-card__badge--num">003</span>
                 </div>
+                <div class="box-card__divider"></div>
+                <p class="box-card__tagline">Hybrid medical AI system combining ultrasound imaging and patient statistical profiling.</p>
+                <ul class="box-card__bullets">
+                  <li>Built CNN model on 2,000 ovarian ultrasound images for PCOS detection.</li>
+                  <li>Optimized classifiers using SMOTE, ADASYN, RF, SVM, and ensemble balancing.</li>
+                  <li>Achieved 94.4% accuracy using ADASYN-balanced Random Forest.</li>
+                </ul>
               </article>
 
             </div>
@@ -218,23 +209,13 @@
       <div class="panel-scroll">
         <div class="about-inner">
 
-          <!-- ── Intro ── -->
-          <div class="about-intro">
-            <p class="collage-p">I'm currently in my final year studying Computer Science &amp; Mathematics, with a minor in Biology.</p>
-            <p class="collage-p">Somewhere along the way, I got really interested in research.</p>
-            <p class="collage-p">Right now, I'm combining microscopy with theory to understand how cells grow and divide — and how we might eventually control that process.</p>
-            <p class="collage-p">Outside of academics, I spend a lot of time reading and writing. I love going down random intellectual rabbit holes — opening way too many tabs and trying to connect ideas across completely different fields.</p>
-          </div>
-
           <!-- ── Research + Lab image ── -->
           <div class="collage-row collage-row--research">
             <div class="collage-text">
-              <p class="collage-p">
-                Right now, I'm combining microscopy with theory to understand how cells grow and divide — and how we might eventually control that process.
-              </p>
-              <p class="collage-p collage-p--small">
-                Outside of academics, I spend a lot of time reading and writing. I love going down random intellectual rabbit holes — opening way too many tabs and trying to connect ideas across completely different fields.
-              </p>
+              <p class="collage-p">I'm currently in my final year studying Computer Science &amp; Mathematics, with a minor in Biology.</p>
+              <p class="collage-p">Somewhere along the way, I got really interested in research.</p>
+              <p class="collage-p">Right now, I'm combining microscopy with theory to understand how cells grow and divide — and how we might eventually control that process.</p>
+              <p class="collage-p">Outside of academics, I spend a lot of time reading and writing.</p>
             </div>
             <div class="collage-photo-wrap collage-photo-wrap--tilt-right">
               <!-- SVG arrow pointing at photo -->
